@@ -41,7 +41,7 @@ jobs:
 
      steps:
      - name: salutation 
-       run: echo "Aurevoir {{ inputs.name }}" 
+       run: echo "Aurevoir ${{ github.event.inputs.name }}" 
      
    
     
