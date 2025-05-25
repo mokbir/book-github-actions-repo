@@ -1,0 +1,18 @@
+# This workflow warns and then closes issues and PRs that have had no activity for a specified amount of time.
+#
+# You can adjust the behavior by modifying this file.
+# For more information, see:
+# https://github.com/actions/stale
+name: Trigger exercice3
+
+on:
+  pull_request:
+    paths:
+      - '**.yml'
+      - '!test/**.yml' 
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Je vérifie que les fichiers YAML"
