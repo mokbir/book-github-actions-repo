@@ -16,4 +16,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: echo "Je vérifie que le code compile bien
+    - run: echo "Je vérifie que le code compile bien"
