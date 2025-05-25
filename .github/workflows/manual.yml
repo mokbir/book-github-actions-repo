@@ -34,3 +34,14 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ inputs.name }} your firstname is ${{ github.event.inputs.prenom}}"
+
+  say-bye-bye:
+   
+     runs-on: ubuntu-latest
+
+     steps:
+     - name: salutation 
+       run: echo "Aurevoir {{ inputs.name }}" 
+     
+   
+    
